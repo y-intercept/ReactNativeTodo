@@ -3,10 +3,7 @@ import { AppRegistry, StyleSheet, Text, View, TouchableHighlight, TextInput, Lis
 import * as firebase from 'firebase'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCcUBuXcacdJq7xoNITuuDJUvFLapJpWjY",
-  authDomain: "reactnativetodo-32c3b.firebaseapp.com",
-  databaseURL: "https://reactnativetodo-32c3b.firebaseio.com",
-  storageBucket: "reactnativetodo-32c3b.appspot.com",
+  //removed for privacy
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 this.itemsRef = firebaseApp.database().ref();
