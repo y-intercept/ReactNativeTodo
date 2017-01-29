@@ -10,14 +10,13 @@ const firebaseConfig = {
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 this.itemsRef = firebaseApp.database().ref();
-var items = []
 
 export default class ReactNativeTodo extends Component {
   constructor(props) {
     super(props);
       var ds = new ListView.DataSource({rowHasChanged: (row1, row2) => row1 != row2 })
       this.state = {
-        dataSource: ds.cloneWithRows(items)
+        dataSource: ds.cloneWithRows([])
       }
   }
 
